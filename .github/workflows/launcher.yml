@@ -62,7 +62,7 @@ jobs:
           export PACKAGE_VERSION=1.$(git rev-list --count HEAD).0
           echo "Making build for version: $PACKAGE_VERSION"
           cd ..
-          node ./repo-folder/build/make_package_json.js build/package.json repo-folder/dist_cfg/config.json Spring-SpringBoard/SpringBoard-Core $PACKAGE_VERSION
+          node ./repo-folder/build/make_package_json.js build/package.json repo-folder/dist_cfg/config.json robertthepie/SpringBoard-Core $PACKAGE_VERSION
 
       - name: Build
         run: |
